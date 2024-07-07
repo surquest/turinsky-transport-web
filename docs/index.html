@@ -1,7 +1,7 @@
-
 <!doctype html public "-//W3C//DTD HTML 4.01//EN">
 <html>
-  <head>
+
+<head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Script-Type" content="text/javascript">
   <meta name="generator" content="PSPad editor, www.pspad.com">
@@ -9,315 +9,421 @@
   <meta name="author" content="webdesign-kolin.cz">
   <meta name="robots" content="all">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  
-  <meta name="keywords" content=""><meta name="description" content=""><title>Turinsky Transport - Profesionální přeprava automobilů po celé Evropě</title><link rel="stylesheet" href="multistyle.css" type="text/css">  
-  <link href="js/parallax_mouseinteraction.css" rel="stylesheet" type="text/css">
-  <link href="js/colorbox.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery_002.js" type="text/javascript"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/jQueryRotateCompressed.js" type="text/javascript"></script>
-  <script src="js/parallax_mouseinteraction.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/jquery.colorbox.js"></script> 
-  </head>
-  <body id="podklad">
 
-    <!-- admin logout -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Turinsky Transport - Profesionální přeprava automobilů po celé Evropě</title>
+  <link rel="stylesheet" href="/turinsky-transport-web/multistyle.css" type="text/css">
+  <link href="/turinsky-transport-web/js/parallax_mouseinteraction.css" rel="stylesheet" type="text/css">
+  <link href="/turinsky-transport-web/js/colorbox.css" rel="stylesheet" type="text/css">
+  <script src="/turinsky-transport-web/js/jquery_002.js" type="text/javascript"></script>
+  <script src="/turinsky-transport-web/js/jquery-ui.js"></script>
+  <script src="/turinsky-transport-web/js/jQueryRotateCompressed.js" type="text/javascript"></script>
+  <script src="/turinsky-transport-web/js/parallax_mouseinteraction.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/turinsky-transport-web/js/jquery.colorbox.js"></script>
+</head>
 
-      
-    <div class="header">
-      <div class="root">
-        <a href="/" title="Turinsky Transport"><img src="data/logo.png" class="logo"></a>
-        <div class="lng_menu">
-          <a href="http://www.turinsky-transport.com" title="Česká verze"></a>
-          <a href="http://de.turinsky-transport.com" title="Deutsch Version"></a>
-          <a href="http://en.turinsky-transport.com" title="English Version"></a>
-        </div>
-        <div class="top_place">
-          <a href="objednat-prepravu-on-line">Objednat přepravu</a>
-          <div class="search_place">
-            <form action="vyhledavani" method="get">
+<body id="podklad">
+
+  <!-- admin logout -->
+
+
+  <div class="header">
+    <div class="root">
+      <a href="/" title="Turinsky Transport"><img src="data/logo.png" class="logo"></a>
+      <div class="lng_menu">
+        <a href="http://www.turinsky-transport.com" title="Česká verze"></a>
+        <a href="http://de.turinsky-transport.com" title="Deutsch Version"></a>
+        <a href="http://en.turinsky-transport.com" title="English Version"></a>
+      </div>
+      <div class="top_place">
+        <a href="/turinsky-transport-web/objednat-prepravu-on-line">Objednat přepravu</a>
+        <div class="search_place">
+          <form action="vyhledavani" method="get">
             <input type="text" name="s_string" size="25" class="text" placeholder="Vyhledávání...">
             <input type="submit" value="" class="btn">
-            </form>
+          </form>
+        </div>
+      </div>
+      <div class="menu_toggler" id="menuBtn">
+        Navigace...
+      </div>
+      <div class="menu_place" id="mainMenu">
+        <a class="active" href="/turinsky-transport-web/profesionalni-preprava-automobilu-po-cele-evrope"
+          title="Úvod">Úvod</a>
+        <div class="submenu_place"><a href="/turinsky-transport-web/nase-sluzby" onclick="return false;" class="dd"
+            id="menu_btn1">Služby</a>
+          <div class="submenu_env" id="menu_1_env">
+            <div class="submenu" id="menu_1">
+              <a href="/turinsky-transport-web/preprava-osobnich-automobilu-turinsky-transport">Přeprava osobních automobilů</a>
+              <a href="/turinsky-transport-web/preprava-nakladnich-automobilu-turinsky-transport">Přeprava nákladních automobilů</a>
+              <a href="/turinsky-transport-web/preprava-dodavek-a-obytnych-vozu">Přeprava dodávek a obytných vozů</a>
+              <a href="/turinsky-transport-web/doprava-v-krytem-vozidle">Doprava v krytém vozidle</a>
+              <a href="/turinsky-transport-web/uskladneni-vozidel-a-opravy-turinsky-transport">Uskladnění vozidel a opravy</a>
+            </div>
           </div>
         </div>
-        <div class="menu_toggler" id="menuBtn">
-          Navigace...
-        </div>
-        <div class="menu_place" id="mainMenu">
-        <a class="active" href="profesionalni-preprava-automobilu-po-cele-evrope" title="Úvod">Úvod</a><div class="submenu_place"><a href="nase-sluzby" onclick="return false;" class="dd" id="menu_btn1">Služby</a><div class="submenu_env" id="menu_1_env">
-                        <div class="submenu" id="menu_1">
-                          <a href="preprava-osobnich-automobilu-turinsky-transport">Přeprava osobních automobilů</a>
-                          <a href="preprava-nakladnich-automobilu-turinsky-transport">Přeprava nákladních automobilů</a>
-                          <a href="preprava-dodavek-a-obytnych-vozu">Přeprava dodávek a obytných vozů</a>
-                          <a href="doprava-v-krytem-vozidle">Doprava v krytém vozidle</a>
-                          <a href="uskladneni-vozidel-a-opravy-turinsky-transport">Uskladnění vozidel a opravy</a>
-                        </div>
-                      </div></div><a href="zaruky-kvality" title="Kvalita">Kvalita</a><a href="ekologie" title="Ekologie">Ekologie</a><a href="kariera" title="Kariéra">Kariéra</a><a href="kontakty" title="Kontakty">Kontakty</a>        </div>
+        <a href="/turinsky-transport-web/zaruky-kvality" title="Kvalita">Kvalita</a>
+        <a href="/turinsky-transport-web/ekologie" title="Ekologie">Ekologie</a>
+        <a href="/turinsky-transport-web/kariera" title="Kariéra">Kariéra</a>
+        <a href="/turinsky-transport-web/kontakty" title="Kontakty">Kontakty</a>
       </div>
     </div>
-    
-        
-    <script>
-  		jQuery(function() {
-  			jQuery('#parallax_mouseinteraction_bullets').parallax_mouseinteraction({
-  				skin: 'bullets',
-  				width: 1920,
-  				height: 532,
-  				width100Proc:false,
-  				defaultEasing:'easeOutElastic',
-  				autoPlay:8,
-  				responsive:false,
-  				autoHideBottomNav:false,
-  				showPreviewThumbs:true,
-  				showNavArrows:false,
-  				myloaderTime:4,
-  				scrollSlideDuration:1.5,
-  				scrollSlideEasing:'swing',
-          pauseOnMouseOver:false,
-          target:'_self',
-          enableMouseInteraction:false
-  			});	
-  		});
-  	</script>
-    
-    <script type="text/javascript">
-  		$(document).ready(function(){
-        
-        if(document.body.clientWidth < 801) $( "#mainMenu" ).hide();
-      
-        $( "#menuBtn" ).on( "click", function( event ) {
-          $( "#mainMenu" ).toggle( "slide",{direction:'up'},500);
+  </div>
+
+
+  <script>
+    jQuery(function () {
+      jQuery('#parallax_mouseinteraction_bullets').parallax_mouseinteraction({
+        skin: 'bullets',
+        width: 1920,
+        height: 532,
+        width100Proc: false,
+        defaultEasing: 'easeOutElastic',
+        autoPlay: 8,
+        responsive: false,
+        autoHideBottomNav: false,
+        showPreviewThumbs: true,
+        showNavArrows: false,
+        myloaderTime: 4,
+        scrollSlideDuration: 1.5,
+        scrollSlideEasing: 'swing',
+        pauseOnMouseOver: false,
+        target: '_self',
+        enableMouseInteraction: false
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      if (document.body.clientWidth < 801) $("#mainMenu").hide();
+
+      $("#menuBtn").on("click", function (event) {
+        $("#mainMenu").toggle("slide", { direction: 'up' }, 500);
+      });
+
+      $("#ico_1").css({ 'opacity': '1' });
+      $("#ico_2").css({ 'opacity': '1' });
+      $("#ico_3").css({ 'opacity': '1' });
+      $("#ico_4").css({ 'opacity': '1' });
+      $("#ico_5").css({ 'opacity': '1' });
+
+      $("#ico_1").delay(500).animate({ top: '0px' }, 350, 'swing', function () {
+        $("#ico_2").animate({ top: '0px' }, 350, 'swing', function () {
+          $("#ico_3").animate({ top: '0px' }, 350, 'swing', function () {
+            $("#ico_4").animate({ top: '0px' }, 350, 'swing', function () {
+              $("#ico_5").animate({ top: '0px' }, 350, 'swing', function () {
+
+                $("#ico_5").animate({ opacity: '0.55' }, 300, 'swing', function () {
+                  $("#ico_4").animate({ opacity: '0.55' }, 300, 'swing', function () {
+                    $("#ico_3").animate({ opacity: '0.55' }, 300, 'swing', function () {
+                      $("#ico_2").animate({ opacity: '0.55' }, 300, 'swing', function () {
+                        $("#ico_1").animate({ opacity: '0.55' }, 300, 'swing', function () {
+
+                          $("#ico_1").css({ 'opacity': '' });
+                          $("#ico_2").css({ 'opacity': '' });
+                          $("#ico_3").css({ 'opacity': '' });
+                          $("#ico_4").css({ 'opacity': '' });
+                          $("#ico_5").css({ 'opacity': '' });
+
+                          $("#ico_1").css({ 'transition': 'all 0.3s' });
+                          $("#ico_2").css({ 'transition': 'all 0.3s' });
+                          $("#ico_3").css({ 'transition': 'all 0.3s' });
+                          $("#ico_4").css({ 'transition': 'all 0.3s' });
+                          $("#ico_5").css({ 'transition': 'all 0.3s' });
+
+                        });
+                      });
+                    });
+                  });
+                });
+
+              });
+            });
+          });
         });
-        
-        $("#ico_1").css({'opacity':'1' });
-        $("#ico_2").css({'opacity':'1' });
-        $("#ico_3").css({'opacity':'1' });
-        $("#ico_4").css({'opacity':'1' });
-        $("#ico_5").css({'opacity':'1' });
-        	      
-        $("#ico_1").delay(500).animate({top: '0px'}, 350, 'swing', function() {
-  			 $("#ico_2").animate({top: '0px'}, 350, 'swing', function() {
-    			 $("#ico_3").animate({top: '0px'}, 350, 'swing', function() {
-      			 $("#ico_4").animate({top: '0px'}, 350, 'swing', function() {
-        			 $("#ico_5").animate({top: '0px'}, 350, 'swing', function() {
-                 
-                  $("#ico_5").animate({opacity: '0.55'}, 300, 'swing', function() {
-              			 $("#ico_4").animate({opacity: '0.55'}, 300, 'swing', function() {
-                			 $("#ico_3").animate({opacity: '0.55'}, 300, 'swing', function() {
-                  			 $("#ico_2").animate({opacity: '0.55'}, 300, 'swing', function() {
-                    			 $("#ico_1").animate({opacity: '0.55'}, 300, 'swing', function() {
-                             
-                              $("#ico_1").css({'opacity':'' });
-                              $("#ico_2").css({'opacity':'' });
-                              $("#ico_3").css({'opacity':'' });
-                              $("#ico_4").css({'opacity':'' });
-                              $("#ico_5").css({'opacity':'' });
-                              
-                              $("#ico_1").css({'transition':'all 0.3s' });
-                              $("#ico_2").css({'transition':'all 0.3s' });
-                              $("#ico_3").css({'transition':'all 0.3s' });
-                              $("#ico_4").css({'transition':'all 0.3s' });
-                              $("#ico_5").css({'transition':'all 0.3s' });
-                             
-                      			});
-                    			});
-                  			});
-                			});
-              			});
-                 
-          			});
-        			});
-      			});
-    			});
-  			});
-        
-  		});	
-  	</script>
-  
-    <div class="banner_place">
-      
-      <div id="slider_pos" style="position: relative; width: 1920px; height: 532px; margin: 0px 0px 0px -8.5px;">
-      <div style="width: 1920px; height: 532px;" class="parallax_mouseinteraction bullets"><div id="parallax_mouseinteraction_bullets">
-     	 	<div class="myloader" id="loader_anim" style="display: none; left: 941.5px; top: 163.5px;"></div>
-          
-          <!-- CONTENT -->               
-          
+      });
+
+    });	
+  </script>
+
+  <div class="banner_place">
+
+    <div id="slider_pos" style="position: relative; width: 1920px; height: 532px; margin: 0px 0px 0px -8.5px;">
+      <div style="width: 1920px; height: 532px;" class="parallax_mouseinteraction bullets">
+        <div id="parallax_mouseinteraction_bullets">
+          <div class="myloader" id="loader_anim" style="display: none; left: 941.5px; top: 163.5px;"></div>
+
+          <!-- CONTENT -->
+
           <ul class="parallax_mouseinteraction_list">
             <li data-text-id="#parallax_mouseinteraction_photoText0" data-link="doprava-v-krytem-vozidle"></li>
-            <li data-text-id="#parallax_mouseinteraction_photoText1" data-link="preprava-osobnich-automobilu-turinsky-transport"></li>
-            <li data-text-id="#parallax_mouseinteraction_photoText2" data-link="preprava-nakladnich-automobilu-turinsky-transport"></li>
-          </ul>    
+            <li data-text-id="#parallax_mouseinteraction_photoText1"
+              data-link="preprava-osobnich-automobilu-turinsky-transport"></li>
+            <li data-text-id="#parallax_mouseinteraction_photoText2"
+              data-link="preprava-nakladnich-automobilu-turinsky-transport"></li>
+          </ul>
 
           <!-- TEXTS -->
-          
-          <!-- End photoText0 -->            
-          
+
+          <!-- End photoText0 -->
+
           <!-- End photoText1 -->
-          
+
           <!-- End photoText2 -->
-          
+
           <!-- End photoText3 -->
-                     
-      </div><div style="display: block; bottom: 15px; top: auto; left: 1015px;" class="bottomNavRight"></div><div style="display: block; bottom: 15px; top: auto; width: 92px; left: 914px;" class="bottomNav"><div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="0"></div><div style="margin-top: 5px;" class="bottomNavButtonOFF bottomNavButtonON" rel="1"></div><div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="2"></div><div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="3"></div></div><div style="display: block; bottom: 15px; top: auto; left: 914px;" class="bottomNavLeft"></div><div style="margin-top: 142px;" class="bannerControls"> <div style="display: none;" class="leftNav"></div> <div style="display: none;" class="rightNav"></div> </div>
-      
-      <div style="width: 1920px; height: 532px;" class="contentHolderVisibleWrapper"><div aria-disabled="false" style="cursor: url(&quot;skins/hand.cur&quot;), url(&quot;skins/hand.cur&quot;), move; left: -1920px; top: 0px; position: absolute; width: 7680px; height: 532px;" class="contentHolder ui-draggable"><div style="width: 1920px; height: 532px;" class="contentHolderUnit" rel="0" id="contentHolderUnit_0">
-              
-            </div><div style="width: 1920px; height: 100%; overflow: hidden; left: 0px; top: 0px;" id="parallax_mouseinteraction_photoText0" class="parallax_mouseinteraction_texts">
-            <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="0" data-initial-top="15" data-final-left="500" data-final-top="15" data-duration="1.75" data-fade-start="0" data-delay="0" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="15" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto01.png" height="454" width="516"></div>
-            <div style="display: none; left: 1800px; top: 100px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70" data-final-left="1000" data-final-top="70" data-duration="1.25" data-fade-start="0" data-delay="0.25" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="750" data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="70" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/text01.png" height="120" width="621"></div>
-          </div><div style="width: 1920px; height: 532px;" class="contentHolderUnit" rel="1" id="contentHolderUnit_1">
-              
-            </div><div style="width: 1920px; height: 100%; overflow: hidden; left: 1920px; top: 0px;" id="parallax_mouseinteraction_photoText1" class="parallax_mouseinteraction_texts">
-            <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="0" data-initial-top="15" data-final-left="900" data-final-top="15" data-duration="1.25" data-fade-start="0" data-delay="0" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="15" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto02.png" height="454" width="645"></div>
-            <div style="display: none; left: 1800px; top: 100px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70" data-final-left="400" data-final-top="70" data-duration="1.5" data-fade-start="0" data-delay="0.25" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="650" data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/text02.png" height="156" width="632"></div>
-            
-          </div><div style="width: 1920px; height: 100%; overflow: hidden; left: 1920px; top: 0px;" id="parallax_mouseinteraction_photoText2" class="parallax_mouseinteraction_texts">
-            <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="0" data-initial-top="10" data-final-left="900" data-final-top="10" data-duration="1.25" data-fade-start="0" data-delay="0" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="10" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="10" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto03.png" height="450" width="663"></div>
-            <div style="display: none; left: 1800px; top: 100px; opacity: 0;" class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70" data-final-left="400" data-final-top="70" data-duration="1.5" data-fade-start="0" data-delay="0.25" data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="650" data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/text03.png" height="156" width="632"></div>
-            
-          </div>
-           <div style="left: 923px; top: 145px; display: none;" class="playOver"></div> <div class="thumbsHolderWrapper"><div class="thumbsHolderVisibleWrapper"><div style="width: 1920px;" class="thumbsHolder"></div></div><div class="carouselLeftNav"></div><div style="right: 0px;" class="carouselRightNav"></div></div> <canvas height="36" width="36" class="mycanvas"></canvas></div><!-- End parallax_mouseinteraction_bullets-->
-      </div>
-      
-      <div class="parallax_controls">
-        <div class="root">
-          <div class="control_item" id="ico_1" onclick="document.location = 'preprava-osobnich-automobilu-turinsky-transport'">Přerava osobních<br>automobilů</div>
-              <div class="control_item" id="ico_2" onclick="document.location = 'preprava-nakladnich-automobilu-turinsky-transport'" style="background-image: url(data/ico02.png);">Přeprava nákladní<br>automobilů</div>
-              <div class="control_item" id="ico_3" onclick="document.location = 'preprava-dodavek-a-obytnych-vozu'" style="background-image: url(data/ico03.png);">Přeprava dodávek a<br>obytných vozů</div>
-              <div class="control_item" id="ico_4" onclick="document.location = 'doprava-v-krytem-vozidle'" style="background-image: url(data/ico04.png);">Doprava v krytém<br>vozidle</div>
-              <div class="control_item" id="ico_5" onclick="document.location = 'uskladneni-vozidel-a-opravy-turinsky-transport'" style="border:0;background-image: url(data/ico05.png);">Uskladnění vozidel a<br>opravy</div>
+
         </div>
-      </div>
-      
+        <div style="display: block; bottom: 15px; top: auto; left: 1015px;" class="bottomNavRight"></div>
+        <div style="display: block; bottom: 15px; top: auto; width: 92px; left: 914px;" class="bottomNav">
+          <div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="0"></div>
+          <div style="margin-top: 5px;" class="bottomNavButtonOFF bottomNavButtonON" rel="1"></div>
+          <div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="2"></div>
+          <div style="margin-top: 5px;" class="bottomNavButtonOFF" rel="3"></div>
+        </div>
+        <div style="display: block; bottom: 15px; top: auto; left: 914px;" class="bottomNavLeft"></div>
+        <div style="margin-top: 142px;" class="bannerControls">
+          <div style="display: none;" class="leftNav"></div>
+          <div style="display: none;" class="rightNav"></div>
+        </div>
+
+        <div style="width: 1920px; height: 532px;" class="contentHolderVisibleWrapper">
+          <div aria-disabled="false"
+            style="cursor: url(&quot;skins/hand.cur&quot;), url(&quot;skins/hand.cur&quot;), move; left: -1920px; top: 0px; position: absolute; width: 7680px; height: 532px;"
+            class="contentHolder ui-draggable">
+            <div style="width: 1920px; height: 532px;" class="contentHolderUnit" rel="0" id="contentHolderUnit_0">
+
+            </div>
+            <div style="width: 1920px; height: 100%; overflow: hidden; left: 0px; top: 0px;"
+              id="parallax_mouseinteraction_photoText0" class="parallax_mouseinteraction_texts">
+              <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line"
+                data-initial-left="0" data-initial-top="15" data-final-left="500" data-final-top="15"
+                data-duration="1.75" data-fade-start="0" data-delay="0" data-easing="easeOutElastic"
+                data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="15"
+                data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15"
+                data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto01.png" height="454" width="516">
+              </div>
+              <div style="display: none; left: 1800px; top: 100px; opacity: 0;"
+                class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70"
+                data-final-left="1000" data-final-top="70" data-duration="1.25" data-fade-start="0" data-delay="0.25"
+                data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="750"
+                data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear"
+                data-exit-left="0" data-exit-top="70" data-exit-duration="1.5" data-exit-delay="0.6"><img
+                  src="data/text01.png" height="120" width="621"></div>
+            </div>
+            <div style="width: 1920px; height: 532px;" class="contentHolderUnit" rel="1" id="contentHolderUnit_1">
+
+            </div>
+            <div style="width: 1920px; height: 100%; overflow: hidden; left: 1920px; top: 0px;"
+              id="parallax_mouseinteraction_photoText1" class="parallax_mouseinteraction_texts">
+              <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line"
+                data-initial-left="0" data-initial-top="15" data-final-left="900" data-final-top="15"
+                data-duration="1.25" data-fade-start="0" data-delay="0" data-easing="easeOutElastic"
+                data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="15"
+                data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="15"
+                data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto02.png" height="454" width="645">
+              </div>
+              <div style="display: none; left: 1800px; top: 100px; opacity: 0;"
+                class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70"
+                data-final-left="400" data-final-top="70" data-duration="1.5" data-fade-start="0" data-delay="0.25"
+                data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="650"
+                data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear"
+                data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img
+                  src="data/text02.png" height="156" width="632"></div>
+
+            </div>
+            <div style="width: 1920px; height: 100%; overflow: hidden; left: 1920px; top: 0px;"
+              id="parallax_mouseinteraction_photoText2" class="parallax_mouseinteraction_texts">
+              <div style="display: none; left: 0px; top: 0px; opacity: 0;" class="parallax_mouseinteraction_text_line"
+                data-initial-left="0" data-initial-top="10" data-final-left="900" data-final-top="10"
+                data-duration="1.25" data-fade-start="0" data-delay="0" data-easing="easeOutElastic"
+                data-enableMouseInteraction="false" data-continuous-left="700" data-continuous-top="10"
+                data-continuous-duration="18" data-continuous-easing="linear" data-exit-left="0" data-exit-top="10"
+                data-exit-duration="1.5" data-exit-delay="0.6"><img src="data/auto03.png" height="450" width="663">
+              </div>
+              <div style="display: none; left: 1800px; top: 100px; opacity: 0;"
+                class="parallax_mouseinteraction_text_line" data-initial-left="1800" data-initial-top="70"
+                data-final-left="400" data-final-top="70" data-duration="1.5" data-fade-start="0" data-delay="0.25"
+                data-easing="easeOutElastic" data-enableMouseInteraction="false" data-continuous-left="650"
+                data-continuous-top="70" data-continuous-duration="18" data-continuous-easing="linear"
+                data-exit-left="0" data-exit-top="15" data-exit-duration="1.5" data-exit-delay="0.6"><img
+                  src="data/text03.png" height="156" width="632"></div>
+
+            </div>
+            <div style="left: 923px; top: 145px; display: none;" class="playOver"></div>
+            <div class="thumbsHolderWrapper">
+              <div class="thumbsHolderVisibleWrapper">
+                <div style="width: 1920px;" class="thumbsHolder"></div>
+              </div>
+              <div class="carouselLeftNav"></div>
+              <div style="right: 0px;" class="carouselRightNav"></div>
+            </div> <canvas height="36" width="36" class="mycanvas"></canvas>
+          </div><!-- End parallax_mouseinteraction_bullets-->
+        </div>
+
+        <div class="parallax_controls">
+          <div class="root">
+            <div class="control_item" id="ico_1"
+              onclick="document.location = 'preprava-osobnich-automobilu-turinsky-transport'">Přerava
+              osobních<br>automobilů</div>
+            <div class="control_item" id="ico_2"
+              onclick="document.location = 'preprava-nakladnich-automobilu-turinsky-transport'"
+              style="background-image: url(data/ico02.png);">Přeprava nákladní<br>automobilů</div>
+            <div class="control_item" id="ico_3" onclick="document.location = 'preprava-dodavek-a-obytnych-vozu'"
+              style="background-image: url(data/ico03.png);">Přeprava dodávek a<br>obytných vozů</div>
+            <div class="control_item" id="ico_4" onclick="document.location = 'doprava-v-krytem-vozidle'"
+              style="background-image: url(data/ico04.png);">Doprava v krytém<br>vozidle</div>
+            <div class="control_item" id="ico_5"
+              onclick="document.location = 'uskladneni-vozidel-a-opravy-turinsky-transport'"
+              style="border:0;background-image: url(data/ico05.png);">Uskladnění vozidel a<br>opravy</div>
+          </div>
+        </div>
+
       </div>
       <script type="text/javascript">
-      <!--
-        document.getElementById('loader_anim').style.display='inline';
-        
-        function checkSize()
-        {
-            document.getElementById('slider_pos').style.margin= '0px 0px 0px ' + ((document.body.clientWidth - 1920)/2) + 'px';
+        < !-
+          document.getElementById('loader_anim').style.display='inline';
+
+        function checkSize() {
+          document.getElementById('slider_pos').style.margin = '0px 0px 0px ' + ((document.body.clientWidth - 1920) / 2) + 'px';
         }
-        
+
         window.setInterval("checkSize()", 200);
-      //-->
+        //-->
       </script>
-      
-    </div></div>
-  
-      
-    <div class="page_content">
+
+    </div>
+  </div>
+
+
+  <div class="page_content">
     <div class="root">
-        
+
       <!-- obsah stránky -->
-      
-        <div class="page_main_content">
-  <h1>Přeprava automobilů po celé Evropě</h1>
-  <p>
-    Společnost Turinsky Transport s.r.o. se přepravou nejen osobních automobilů zabývá již více než 20 let. Své zastoupení má mimo České republiky také v Německu a na Slovensku. Zajišťujeme přepravu všech typů automobilů v libovoleném množství v rámci celé Evropy. Dále nabízíme opravy autopřepravníků včetně doplňkových služeb jako je prodej pohonných hmot, prodej náhradních dílů či mytí vozidel. 
-  </p>
-  <div class="main_c_item">
-    <strong>Mezinárodní doprava</strong>
-    <p>
-      Specializujeme se na přepravu libovolného množství automobilů všech typů po celé Evropě. <a href="objednat-prepravu-on-line">Zašlete nám poptávku</a> v případě zájmu u naše služby.
-    </p>
-  </div>
-  <div class="main_c_item" style="float:right;">
-    <strong style="background: url(data/ico_help.png) left center no-repeat;">Záruka poskytovaných služeb</strong>
-    <p>
-      Díky dlouholetým zkušenostem a moderním technologiím můžeme garantovat vysokou kvalitu nabízených služeb. To deklarujeme také certifikací ISO 9001.
-    </p>
-  </div>
-</div>
-<img src="data/main_img.jpg" class="main_left">    
+
+      <div class="page_main_content">
+        <h1>Přeprava automobilů po celé Evropě</h1>
+        <p>
+          Společnost Turinsky Transport s.r.o. se přepravou nejen osobních automobilů zabývá již více než 20 let. Své
+          zastoupení má mimo České republiky také v Německu a na Slovensku. Zajišťujeme přepravu všech typů automobilů v
+          libovoleném množství v rámci celé Evropy. Dále nabízíme opravy autopřepravníků včetně doplňkových služeb jako
+          je prodej pohonných hmot, prodej náhradních dílů či mytí vozidel.
+        </p>
+        <div class="main_c_item">
+          <strong>Mezinárodní doprava</strong>
+          <p>
+            Specializujeme se na přepravu libovolného množství automobilů všech typů po celé Evropě. <a
+              href="objednat-prepravu-on-line">Zašlete nám poptávku</a> v případě zájmu u naše služby.
+          </p>
+        </div>
+        <div class="main_c_item" style="float:right;">
+          <strong style="background: url(data/ico_help.png) left center no-repeat;">Záruka poskytovaných služeb</strong>
+          <p>
+            Díky dlouholetým zkušenostem a moderním technologiím můžeme garantovat vysokou kvalitu nabízených služeb. To
+            deklarujeme také certifikací ISO 9001.
+          </p>
+        </div>
+      </div>
+      <img src="data/main_img.jpg" class="main_left">
     </div>
-    </div>
-    
-        
-    <script language="JavaScript" type="text/javascript">
-      <!--
-        function mapa(kolik)
-        {
-            document.getElementById('mapa_bg').style.backgroundPosition = "0 -"+(kolik*370)+"px";
-            if(kolik < 1)
-            {
-                document.getElementById('map_1').style.color = "#ed1c24";
-                document.getElementById('map_2').style.color = "#ed1c24";
-                document.getElementById('map_3').style.color = "#ed1c24";
-            }
-            else
-            {
-                document.getElementById('map_' + kolik).style.color = "black";
-            }
+  </div>
+
+
+  <script language="JavaScript" type="text/javascript">
+    < !-
+      function mapa(kolik) {
+        document.getElementById('mapa_bg').style.backgroundPosition = "0 -" + (kolik * 370) + "px";
+        if (kolik < 1) {
+          document.getElementById('map_1').style.color = "#ed1c24";
+          document.getElementById('map_2').style.color = "#ed1c24";
+          document.getElementById('map_3').style.color = "#ed1c24";
         }
-      // -->
-    </script>
-    
-    <div class="mapa_place">
-      <div class="root">
-        <div class="mapa_box" id="mapa_bg">
-          <img src="data/mapka_none.png" usemap="#image-map">
-          <map name="image-map">
-            <area href="kontakty#de" title="Spedition Turinsky GmbH" onmousemove="mapa('1');" onmouseout="mapa('0');" shape="poly" coords="63,65,28,147,38,264,87,283,65,340,152,360,234,340,231,320,260,295,219,258,203,223,272,182,287,186,276,109,261,98,267,80,245,40,214,24,171,48,175,31,143,24,144,14,109,5,114,29,109,53,100,73,88,60" style="outline:none;">
-            <area href="kontakty#cz" title="Turinsky Transport s.r.o." onmousemove="mapa('3');" onmouseout="mapa('0');" shape="poly" coords="272,184,207,222,214,245,225,267,239,274,273,301,290,296,295,287,299,275,327,285,340,288,346,283,358,288,366,282,386,279,395,257,412,245,410,236,399,221,380,223,370,212,348,204,350,217,340,217,326,209,337,202,312,194,295,185" style="outline:none;">
-            <area href="kontakty#sk" title="Turinsky transport Slovakia s.r.o." onmousemove="mapa('2');" onmouseout="mapa('0');" shape="poly" coords="361,287,355,300,366,318,387,327,421,322,420,313,439,306,450,300,464,293,468,277,482,280,499,277,518,282,521,271,525,259,517,245,505,236,482,233,473,241,462,241,449,248,440,244,428,237,421,246,413,244,398,251,389,273" style="outline:none;">
-          </map>
-        </div>
-        <div class="map_items">
-          <div class="map_item">
-            <span id="map_2" style="color:#ed1c24;font-size:160%;line-height:44px;">Turinsky transport Slovakia s.r.o.</span><br>
-            Vazovova 9/B, SK-81107 Bratislava<br>
-            +421 265 457 309<br>
-            +421 265 457 311<br>
-            <a href="mailto:krizova@turinsky-transport.com">krizova@turinsky-transport.com</a>
-          </div>
-          <div class="map_item">
-            <span id="map_3" style="color:#ed1c24;font-size:160%;line-height:44px;">Turinsky Transport s.r.o.</span><br>
-            Plazy 102, 293 01 Mladá Boleslav<br>
-            +420 326 370 030-3<br>
-            +420 326 370 038-9<br>
-            <a href="mailto:info@turinsky-transport.com">info@turinsky-transport.com</a>
-          </div>
-          <div class="map_item">
-            <span id="map_1" style="color:#ed1c24;font-size:160%;line-height:44px;">Spedition Turinsky GmbH</span><br>
-            Friedrich-Ebert-Straße 21, 95448 Bayreuth<br>
-            +49 9270 9917200<br>-<br>
-            <a href="mailto:turinsky@turinsky-transport.com">turinsky@turinsky-transport.com</a>
-          </div>
-        </div>
+        else {
+          document.getElementById('map_' + kolik).style.color = "black";
+        }
+      }
+    // -->
+  </script>
+
+  <div class="mapa_place">
+    <div class="root">
+      <div class="mapa_box" id="mapa_bg">
+        <img src="data/mapka_none.png" usemap="#image-map">
+        <map name="image-map">
+          <area href="kontakty#de" title="Spedition Turinsky GmbH" onmousemove="mapa('1');" onmouseout="mapa('0');"
+            shape="poly"
+            coords="63,65,28,147,38,264,87,283,65,340,152,360,234,340,231,320,260,295,219,258,203,223,272,182,287,186,276,109,261,98,267,80,245,40,214,24,171,48,175,31,143,24,144,14,109,5,114,29,109,53,100,73,88,60"
+            style="outline:none;">
+          <area href="kontakty#cz" title="Turinsky Transport s.r.o." onmousemove="mapa('3');" onmouseout="mapa('0');"
+            shape="poly"
+            coords="272,184,207,222,214,245,225,267,239,274,273,301,290,296,295,287,299,275,327,285,340,288,346,283,358,288,366,282,386,279,395,257,412,245,410,236,399,221,380,223,370,212,348,204,350,217,340,217,326,209,337,202,312,194,295,185"
+            style="outline:none;">
+          <area href="kontakty#sk" title="Turinsky transport Slovakia s.r.o." onmousemove="mapa('2');"
+            onmouseout="mapa('0');" shape="poly"
+            coords="361,287,355,300,366,318,387,327,421,322,420,313,439,306,450,300,464,293,468,277,482,280,499,277,518,282,521,271,525,259,517,245,505,236,482,233,473,241,462,241,449,248,440,244,428,237,421,246,413,244,398,251,389,273"
+            style="outline:none;">
+        </map>
       </div>
-    </div>
-    
-    <div class="obj_place"><a href="objednat-prepravu-on-line">Objednat přepravu on-line</a></div>    
-    <div class="bottom_menu">
-      <div class="root">
-        <div class="bottom_menu_place">
-          <a href="profesionalni-preprava-automobilu-po-cele-evrope">Úvod</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="nase-sluzby">Služby</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="zaruky-kvality">Kvalita</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ekologie">Ekologie</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="kariera">Kariéra</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="kontakty">Kontakty</a>
+      <div class="map_items">
+        <div class="map_item">
+          <span id="map_2" style="color:#ed1c24;font-size:160%;line-height:44px;">Turinsky transport Slovakia
+            s.r.o.</span><br>
+          Vazovova 9/B, SK-81107 Bratislava<br>
+          +421 265 457 309<br>
+          +421 265 457 311<br>
+          <a href="mailto:krizova@turinsky-transport.com">krizova@turinsky-transport.com</a>
         </div>
-        <a href="http://servis.turinsky-transport.com/" target="_blank" class="login">Login</a>
-      </div>
-    </div>
-    
-    <div class="copyright_qc">
-      <div class="root">
-        <div class="copyright_qc_txt">
-          <span style="font-size:150%">Turinsky Transport s.r.o.</span><br>
+        <div class="map_item">
+          <span id="map_3" style="color:#ed1c24;font-size:160%;line-height:44px;">Turinsky Transport s.r.o.</span><br>
+          Plazy 102, 293 01 Mladá Boleslav<br>
           +420 326 370 030-3<br>
+          +420 326 370 038-9<br>
           <a href="mailto:info@turinsky-transport.com">info@turinsky-transport.com</a>
         </div>
-        <img src="data/logo_small.png">
+        <div class="map_item">
+          <span id="map_1" style="color:#ed1c24;font-size:160%;line-height:44px;">Spedition Turinsky GmbH</span><br>
+          Friedrich-Ebert-Straße 21, 95448 Bayreuth<br>
+          +49 9270 9917200<br>-<br>
+          <a href="mailto:turinsky@turinsky-transport.com">turinsky@turinsky-transport.com</a>
+        </div>
       </div>
     </div>
-    
-    <div class="copyright_line">
-      &copy; 2016 Turinsky Transport s.r.o. - Všechna práva vyhrazena | <a href="ochrana-osobnich-udaju-gdpr">Ochrana osobních údajů (GDPR)</a> | webdesign by <a href="http://www.it-products.cz">IT Products s.r.o.</a>
+  </div>
+
+  <div class="obj_place"><a href="/turinsky-transport-web/objednat-prepravu-on-line">Objednat přepravu on-line</a></div>
+  <div class="bottom_menu">
+    <div class="root">
+      <div class="bottom_menu_place">
+        <a href="profesionalni-preprava-automobilu-po-cele-evrope">Úvod</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/turinsky-transport-web/nase-sluzby">Služby</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/turinsky-transport-web/zaruky-kvality">Kvalita</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/turinsky-transport-web/ekologie">Ekologie</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/turinsky-transport-web/kariera">Kariéra</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/turinsky-transport-web/kontakty">Kontakty</a>
+      </div>
+      <a href="http://servis.turinsky-transport.com/" target="_blank" class="login">Login</a>
     </div>
-    
-  </body>
+  </div>
+
+  <div class="copyright_qc">
+    <div class="root">
+      <div class="copyright_qc_txt">
+        <span style="font-size:150%">Turinsky Transport s.r.o.</span><br>
+        +420 326 370 030-3<br>
+        <a href="mailto:info@turinsky-transport.com">info@turinsky-transport.com</a>
+      </div>
+      <img src="/turinsky-transport-web/data/logo_small.png">
+    </div>
+  </div>
+
+  <div class="copyright_line">
+    &copy; 2016 Turinsky Transport s.r.o. - Všechna práva vyhrazena | <a href="/turinsky-transport-web/ochrana-osobnich-udaju-gdpr">
+      Ochrana osobních údajů (GDPR)</a> | webdesign by <a href="http://www.it-products.cz">IT Products s.r.o.</a>
+  </div>
+
+</body>
+
 </html>
