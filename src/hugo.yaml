@@ -8,6 +8,9 @@ params:
 title: ABC Widgets, Inc.
 theme: custom
 
+disableKinds:
+  - taxonomy
+
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 

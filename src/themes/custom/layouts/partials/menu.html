@@ -1,46 +1,21 @@
-<nav id="navbar" class="pure-menu">
-    {{- $currentPage := . -}}
-    {{- $currentUrl := .RelPermalink -}}
-    {{- $baseURL := .Site.BaseURL }}
-    <p> {{.Site.Menus.navbar}}</p>
-    <!-- <ul class="pure-menu-list">
-        {{- range .Site.Menus.navbar -}}
-            {{ $navbar_decoration := "" }}
-            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                {{ $navbar_decoration = "active" }}
-            {{- else if eq $currentUrl .URL -}}
-                {{ $navbar_decoration = "active" }}
-            {{- else if and (in ($currentUrl|lower) (.URL|lower)) (ne (relURL .URL) (relURL $baseURL)) -}}
-                {{ $navbar_decoration = "insection" }}
-            {{- end -}}
-
-            {{- $name := .Name }}
-            {{- with .Identifier }}
-              {{- with T . }}
-                {{- $name = . }}
-              {{- end }}
+<hr />
+<ul>
+    <li>
+        <a href="{{ site.Home.Permalink }}">Home</a>
+    </li>
+    
+    {{- range site.Sections }}
+    <li>
+        <a href="{{.Permalink}}">{{ .Title }}</a>
+        <ul>
+            {{- range .Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{ .Title }}</a>
+            </li>
             {{- end }}
+        </ul>
+    </li>
+    {{- end }}
+</ul>
 
-            {{- if .Children -}}
-                <li class="navbar-item navbar-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover {{ $navbar_decoration }}">
-                    {{ if .URL }}
-                        <a href="{{ .URL }}" class="pure-menu-link">{{- $name -}}</a>
-                    {{ else }}
-                        <div class="pure-menu-link">{{- $name -}}</div>
-                    {{ end }}
-                    <ul class="pure-menu-children">
-                        {{- partial "navbar/nested-desktop.html" . -}}
-                    </ul>
-                </li>
-            {{- else -}}
-                <li class="navbar-item pure-menu-item {{ $navbar_decoration }}">
-                    {{ if .URL }}
-                        <a href="{{ .URL }}" class="pure-menu-link">{{- $name -}}</a>
-                    {{ else }}
-                        <div class="pure-menu-link">{{- $name -}}</div>
-                    {{ end }}
-                </li>
-            {{- end -}}
-        {{- end -}}
-    </ul> -->
-</nav>
+<hr />
