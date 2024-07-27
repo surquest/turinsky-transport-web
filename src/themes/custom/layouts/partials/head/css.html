@@ -1,6 +1,6 @@
 <!-- Inclode all CSS files from directory assets/css -->
-{{- $styles := resources.Match "css/*.css" -}}
-{{- with $styles }}
+{{- $assets := resources.Match "css/*.css" -}}
+{{- with $assets }}
   {{- range . }}
     {{- if eq hugo.Environment "development" }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">

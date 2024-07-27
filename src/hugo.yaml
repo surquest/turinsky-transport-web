@@ -6,7 +6,7 @@ params:
     phone: +1 202-555-1212
   subtitle: The Best Widgets on Earth
 title: ABC Widgets, Inc.
-theme: custom
+theme: hugoplate
 
 disableKinds:
   - taxonomy

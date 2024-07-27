@@ -1,3 +1,8 @@
-<h1>{{ site.Title }}</h1>
+{{ $image := resources.Get "img/logo.png" }}
+<div id="logo">
+    <a href="{{ site.Home.Permalink }}" title="{{ site.Title }}">
+        <img src="{{ $image.RelPermalink }}" class="logo" alt="logo">
+    </a>
+</div>
 {{ partial "menu.html" (dict "site" $.Site "menuID" "main" "page" .) }}
-{{ partial "allLanguages.html" (dict "site" $.Site) }}
+{{ partial "allLanguages.html" (dict "site" $.Site) }} -->

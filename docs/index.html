@@ -30,7 +30,13 @@
 
   <div class="header">
     <div class="root">
-      <a href="/turinsky-transport-web/" title="Turinsky Transport"><img src="/turinsky-transport-web/data/logo.png" class="logo"></a>
+      <a 
+        href="/" 
+        title="Turinsky Transport"
+      >
+        {{ $image := resources.Get "img/logo.png" }}
+        <img src="{{ $image.RelPermalink }}" class="logo" alt="logo">
+    </a>
       <div class="lng_menu">
         <a href="http://www.turinsky-transport.com" title="Česká verze"></a>
         <a href="http://de.turinsky-transport.com" title="Deutsch Version"></a>
