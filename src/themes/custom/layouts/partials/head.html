@@ -1,7 +1,14 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+
 <meta name="copyright" content="Turinsky Transport">
 <meta name="robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css">
+<!-- <script src="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"></script> -->
+<!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+
+
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
+
 {{ partialCached "head/js.html" . }}
