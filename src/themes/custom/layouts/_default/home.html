@@ -1,5 +1,12 @@
+
+
 {{ define "main" }}
+<div>
+  {{ $image := resources.Get "img/home.bg.jpg" }}
+  <!-- <img src="{{ $image.RelPermalink }}"  class="bq" alt="backgroud" width="100%" height="100%">   -->
+</div>
   {{ .Content }}
+
   {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}

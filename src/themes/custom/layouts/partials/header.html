@@ -1,64 +1,27 @@
-<div class="header header-fixed u-unselectable header-animated">
-    <div class="header-brand">
-        <div class="nav-item no-hover">
-            <a><h6 class="title">Logo</h6></a>
-        </div>
-        <div class="nav-item nav-btn" id="header-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <div class="header-nav" id="header-menu" role="button">
-        <div class="nav-left">
-            <div class="nav-item text-center">
-                <a href="#">
-                    <span class="icon">
-                        <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="nav-item text-center">
-                <a href="#">
-                    <span class="icon">
-                        <i class="fab fa-wrapper fa-slack" aria-hidden="true"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="nav-item text-center">
-                <a href="#">
-                    <span class="icon">
-                        <i class="fab fa-wrapper fa-twitter" aria-hidden="true"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="nav-item has-sub toggle-hover" id="left-dropdown">
-                <a class="nav-dropdown-link">Animated</a>
-                <ul class="dropdown-menu dropdown-animated" role="menu">
-                    <li role="menuitem"><a href="#">First Item</a></li>
-                    <li role="menuitem"><a href="#">Second Item</a></li>
-                    <li role="menuitem"><a href="#">Third Item</a></li>
-                </ul>
-            </div>
-        </div>
+<nav id="nav" class="uk-navbar-container uk-navbar-transparent">
+    <div class="uk-container">
+        <div uk-navbar>
 
-        <div class="nav-right">
-            <div class="nav-item active">
-                <a href="#">Active</a>
+            <div class="uk-navbar-left uk-margin-medium-right">
+
+                <a href="{{ site.Home.Permalink }}" title="{{ site.Title }}">
+                    {{ $image := resources.Get "img/logo.png" }}
+                    <img src="{{ $image.RelPermalink }}" class="logo" alt="logo {{ site.Title }}" >
+                </a>
+
             </div>
-            <div class="nav-item">
-                <a href="#">Link 1</a>
-            </div>
-            <div class="nav-item has-sub" id="right-dropdown">
-                <a class="nav-dropdown-link">Click Me</a>
-                <ul class="dropdown-menu" role="menu">
-                    <li role="menuitem"><a href="#">First Item</a></li>
-                    <li role="menuitem"><a href="#">Second Item</a></li>
-                    <li role="menuitem"><a href="#">Third Item</a></li>
-                    <li class="dropdown-menu-divider"></li>
-                    <li role="menuitem"><a href="#">Fourth Item</a></li>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav" uk-dropnav="mode: click">
+                    {{ partial "menu.html" (dict "site" $.Site) }}
+                    <li>
+                        <a href>|</a>
+                    </li>
+                    {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
                 </ul>
+
             </div>
+
         </div>
     </div>
-</div>
+</nav>

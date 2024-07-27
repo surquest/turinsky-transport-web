@@ -1,5 +1,6 @@
 # NodeJs
 src/node_modules
+src/public
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

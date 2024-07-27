@@ -1,14 +1,10 @@
 <meta charset="utf-8">
-
 <meta name="copyright" content="Turinsky Transport">
 <meta name="robots" content="all">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css">
-<!-- <script src="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"></script> -->
-<!-- <script src="//unpkg.com/alpinejs" defer></script> -->
-
-
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.8/dist/css/uikit.min.css" />
 {{ partialCached "head/css.html" . }}
-
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.8/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.8/dist/js/uikit-icons.min.js"></script>
 {{ partialCached "head/js.html" . }}

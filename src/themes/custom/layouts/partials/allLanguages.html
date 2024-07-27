@@ -1,12 +1,12 @@
-<p>
-    current language: {{ .site.Language.LanguageCode }}
-</p>
-<ul>
-    {{ range .site.Home.AllTranslations }}
     <li>
-        <a href="{{ .RelPermalink }}">
-        
-            {{ .Language.LanguageCode }}
-        </a></li>
-    {{ end }}
-</ul>
+        <a href>{{ .site.Language.LanguageCode }}<span uk-drop-parent-icon></span></a>
+        <div class="uk-dropdown">
+            <ul class="uk-nav uk-dropdown-nav">
+                {{ range .page.AllTranslations }}
+                <li class="uk-text-center">
+                    <a width="100%" href="{{ .RelPermalink }}">{{ upper .Language.LanguageName }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </li>
