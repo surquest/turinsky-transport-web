@@ -1,0 +1,35 @@
+baseURL: https://example.org/
+languageCode: en
+params:
+  contact:
+    email: info@example.org
+    phone: +1 202-555-1212
+  subtitle: The Best Widgets on Earth
+title: ABC Widgets, Inc.
+theme: custom
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    disabled: false
+    languageCode: "en"
+    languageDirection: ""
+    languageName: "english"
+    title: "Turinsky Transport"
+    weight: 0
+  de:
+    disabled: false
+    languageCode: "de"
+    languageDirection: ""
+    languageName: "german"
+    title: "Turinsky Transport"
+    weight: 1
+  cz:
+    disabled: false
+    languageCode: "cz"
+    languageDirection: ""
+    languageName: "czech"
+    title: "Turinsky Transport"
+    weight: 2

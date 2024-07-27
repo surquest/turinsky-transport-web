@@ -1,51 +1,46 @@
-{{- /*
-Renders a menu for the given menu ID.
+<nav id="navbar" class="pure-menu">
+    {{- $currentPage := . -}}
+    {{- $currentUrl := .RelPermalink -}}
+    {{- $baseURL := .Site.BaseURL }}
+    <p> {{.Site.Menus.navbar}}</p>
+    <!-- <ul class="pure-menu-list">
+        {{- range .Site.Menus.navbar -}}
+            {{ $navbar_decoration := "" }}
+            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                {{ $navbar_decoration = "active" }}
+            {{- else if eq $currentUrl .URL -}}
+                {{ $navbar_decoration = "active" }}
+            {{- else if and (in ($currentUrl|lower) (.URL|lower)) (ne (relURL .URL) (relURL $baseURL)) -}}
+                {{ $navbar_decoration = "insection" }}
+            {{- end -}}
 
-@context {page} page The current page.
-@context {string} menuID The menu ID.
+            {{- $name := .Name }}
+            {{- with .Identifier }}
+              {{- with T . }}
+                {{- $name = . }}
+              {{- end }}
+            {{- end }}
 
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-*/}}
-
-{{- $page := .page }}
-{{- $menuID := .menuID }}
-
-{{- with index site.Menus $menuID }}
-  <nav>
-    <ul>
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
-  </nav>
-{{- end }}
-
-{{- define "partials/inline/menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    <li>
-      <a
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
+            {{- if .Children -}}
+                <li class="navbar-item navbar-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover {{ $navbar_decoration }}">
+                    {{ if .URL }}
+                        <a href="{{ .URL }}" class="pure-menu-link">{{- $name -}}</a>
+                    {{ else }}
+                        <div class="pure-menu-link">{{- $name -}}</div>
+                    {{ end }}
+                    <ul class="pure-menu-children">
+                        {{- partial "navbar/nested-desktop.html" . -}}
+                    </ul>
+                </li>
+            {{- else -}}
+                <li class="navbar-item pure-menu-item {{ $navbar_decoration }}">
+                    {{ if .URL }}
+                        <a href="{{ .URL }}" class="pure-menu-link">{{- $name -}}</a>
+                    {{ else }}
+                        <div class="pure-menu-link">{{- $name -}}</div>
+                    {{ end }}
+                </li>
+            {{- end -}}
         {{- end -}}
-      >{{ $name }}</a>
-      {{- with .Children }}
-        <ul>
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{- end }}
-    </li>
-  {{- end }}
-{{- end }}
+    </ul> -->
+</nav>

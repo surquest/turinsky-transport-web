@@ -1,0 +1,12 @@
+<p>
+    current language: {{ .site.Language.LanguageCode }}
+</p>
+<ul>
+    {{ range .site.Home.AllTranslations }}
+    <li>
+        <a href="{{ .RelPermalink }}">
+        
+            {{ .Language.LanguageCode }}
+        </a></li>
+    {{ end }}
+</ul>

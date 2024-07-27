@@ -1,2 +1,2 @@
-# turinsky-transport-web
+cd # turinsky-transport-web
 Static website for Turinsky Transport
