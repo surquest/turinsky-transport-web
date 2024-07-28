@@ -4,4 +4,10 @@ nav > .uk-container {
 
 img.logo{
     float: left;
+    max-width: 250px;
+    width: 250px;
+}
+
+#side-nav > .uk-offcanvas-bar {
+    background-color: rgba(0, 0, 0, 0.8);
 }

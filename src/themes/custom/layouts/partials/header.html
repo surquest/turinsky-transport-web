@@ -6,22 +6,31 @@
             <div class="uk-navbar-left uk-margin-medium-right">
 
                 <a href="{{ site.Home.Permalink }}" title="{{ site.Title }}">
-                    <img src="{{ $image.RelPermalink }}" class="logo" alt="logo {{ site.Title }}" width="60%" >
+                    <img src="{{ $image.RelPermalink }}" class="logo" alt="logo {{ site.Title }}" >
                 </a>
 
             </div>
 
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav" uk-dropnav="mode: click">
+                <ul class="uk-navbar-nav uk-navbar-nav uk-visible@s" uk-dropnav="mode: click">
                     {{ partial "menu.html" (dict "site" $.Site) }}
                     <li>
                         <a href>|</a>
                     </li>
                     {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
+                    
                 </ul>
-
+                <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #side-nav"></a>
             </div>
 
         </div>
     </div>
 </nav>
+<div id="side-nav" uk-offcanvas="flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-dropnav="mode: click">
+            {{ partial "menu.html" (dict "site" $.Site) }}
+            {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
+        </ul>
+    </div>
+</div>

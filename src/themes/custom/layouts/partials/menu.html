@@ -1,13 +1,13 @@
   <li>
-    <a href="{{ site.Home.Permalink }}">{{ site.Home.Title}}</a>
+    <a href="{{ site.Home.Permalink }}">{{ upper site.Home.Title}}</a>
   </li>
   {{- range site.Sections }}
   <li>
     <a href="{{.Permalink}}">
+      {{ upper .Title }}
       {{ if .Pages }}
       <span uk-drop-parent-icon></span>
       {{- end }}
-      {{ .Title }}
     </a>
     {{ if .Pages }}
     <div class="uk-dropdown">
