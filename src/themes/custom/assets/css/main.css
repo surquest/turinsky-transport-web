@@ -1,6 +1,7 @@
 main {
-    padding-top: 85px;
-    min-height: calc(100% - 125px);
-    height: calc(100% - 125px);
+    height: calc(100% - 25px);
+}
 
+main #hero {
+    min-height: calc(100% - 100px);
 }

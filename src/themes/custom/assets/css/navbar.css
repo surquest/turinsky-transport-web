@@ -1,5 +1,7 @@
-/* #nav {
-    background: none !important;
-    background-color: none !important;
-    
-} */
+nav > .uk-container {
+    border-bottom: 1px solid var(--light);
+}
+
+img.logo{
+    float: left;
+}

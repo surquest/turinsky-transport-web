@@ -1,12 +1,12 @@
-<nav id="nav" class="uk-navbar-container uk-navbar-transparent uk-position-top">
+{{ $image := resources.Get "img/logo.png" }}
+<nav id="nav" class="uk-navbar-container uk-navbar-transparent uk-position-relative uk-position-z-index">
     <div class="uk-container">
         <div uk-navbar>
 
             <div class="uk-navbar-left uk-margin-medium-right">
 
                 <a href="{{ site.Home.Permalink }}" title="{{ site.Title }}">
-                    {{ $image := resources.Get "img/logo.png" }}
-                    <img src="{{ $image.RelPermalink }}" class="logo" alt="logo {{ site.Title }}" >
+                    <img src="{{ $image.RelPermalink }}" class="logo" alt="logo {{ site.Title }}" width="60%" >
                 </a>
 
             </div>
