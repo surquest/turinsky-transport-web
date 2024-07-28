@@ -14,9 +14,7 @@
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-navbar-nav uk-visible@s" uk-dropnav="mode: click">
                     {{ partial "menu.html" (dict "site" $.Site) }}
-                    <li>
-                        <a href>|</a>
-                    </li>
+                    <li class="uk-nav-divider"></li>
                     {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
                     
                 </ul>
@@ -30,6 +28,7 @@
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-dropnav="mode: click">
             {{ partial "menu.html" (dict "site" $.Site) }}
+            <li class="uk-nav-divider"></li>
             {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
         </ul>
     </div>
