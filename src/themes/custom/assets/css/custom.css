@@ -1,6 +1,7 @@
 html, body {
     padding: 0px;
     margin: 0px;
+	height: 100%;
 }
 
 body {
@@ -8,4 +9,5 @@ body {
 	font-size: 14px;
 	color: #4b4846;
 	text-align: center;
+	height: 100%;
 }
