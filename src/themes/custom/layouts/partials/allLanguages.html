@@ -1,7 +1,8 @@
     <li>
-        <a href>
-            {{ upper .site.Language.LanguageName }}
-            <span uk-drop-parent-icon></span>
+        <a href="#" uk-icon="icon: world">
+            <span uk-visible@s>
+                {{ upper .site.Language.LanguageCode }}
+            </span>
         </a>
         <div class="uk-dropdown">
             <ul class="uk-nav uk-dropdown-nav">

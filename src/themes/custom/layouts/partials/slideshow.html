@@ -1,0 +1,37 @@
+{{ $slide01 := resources.Get "img/bq/slide.001.webp" }}
+{{ $slide02 := resources.Get "img/bq/slide.002.webp" }}
+<div id="slideshow">
+    <div uk-slideshow="autoplay: true autoplay-interval: 2500 min-height: 300; max-height: 750">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <div class="uk-slideshow-items">
+                <div>
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="{{$slide01.Permalink}}" alt="LKWs" uk-cover>
+                    </div>
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                        <h3 class="uk-margin-remove">Bottom</h3>
+                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                        <img src="{{$slide02.Permalink}}" alt="LKWs" uk-cover>
+                    </div>
+                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                        <h3 class="uk-margin-remove">Left</h3>
+                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                uk-slideshow-item="next"></a>
+
+        </div>
+    </div>
+</div>
+
+<!--  -->

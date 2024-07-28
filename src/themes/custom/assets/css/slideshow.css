@@ -1,0 +1,7 @@
+#slideshow {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 150px);
+  overflow: hidden;
+  margin: 0 auto;
+}

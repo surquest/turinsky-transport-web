@@ -1,18 +1,6 @@
 {{ define "main" }}
-{{ $bgImage := resources.Get "img/home.bg.jpg" }}
-
-
-  <div 
-  id="hero" 
-  uk-img
-  class="uk-background-cover"
-  data-src="{{$bgImage.RelPermalink}}" 
-></div>
-  <!-- <div class="uk-overlay-primary uk-position-cover"></div> -->
-  <div class="uk-overlay uk-position-bottom uk-light">
-    {{ .Content }}
-  </div>
-
+{{ partial "slideshow.html" (dict "site" $.Site "page" $.Page ) }}
+{{ .Content }}
 {{ range site.RegularPages }}
 
   <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
