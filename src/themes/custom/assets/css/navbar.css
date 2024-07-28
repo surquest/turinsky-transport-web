@@ -4,6 +4,7 @@ nav > .uk-container {
 
 img.logo{
     float: left;
+    width: 250px;
 }
 
 #side-nav > .uk-offcanvas-bar {
