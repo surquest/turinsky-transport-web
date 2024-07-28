@@ -1,9 +1,9 @@
 {{ $slide01 := resources.Get "img/bq/slide.001.webp" }}
 {{ $slide02 := resources.Get "img/bq/slide.002.webp" }}
 <div id="slideshow">
-    <div uk-slideshow="autoplay: true autoplay-interval: 2500 min-height: 300; max-height: 750">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-            <div class="uk-slideshow-items">
+    <div class="slides" uk-slideshow="autoplay: true autoplay-interval: 6500">
+        <div class="slidewrapper" tabindex="-1">
+            <div class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 525">
                 <div>
                     <div
                         class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
