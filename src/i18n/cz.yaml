@@ -1,2 +1,18 @@
-privacy: privacy
-security: security
+home:
+  slider:
+    slide:
+      passenger-vehicle-transport: 
+        title: Přeprava osobních automobilů
+        text: Více než 20 let přepravy autodopravců na míru po celé Evropě, která poskytuje flexibilitu sledování pomocí GPS pro výrobce OEM i mimo ně.
+      commercial-vehicle-transport: 
+        title: Přeprava nákladních automobilů
+        text: Řešení nemožných přepravních výzev pomocí všestranných řešení, včetně jedinečných 3vozových tahačů.
+      transport-of-campers-and-vans: 
+        title: Přeprava dodávek a obytných vozů
+        text: Řešení pro přepravu obytných vozů a dodávek na míru, bez ohledu na velikost nebo váhu, s naším přístupem „nic není nemožné“.
+      enclosed-transports: 
+        title: Doprava v krytém vozidle
+        text: Bezpečná, diskrétní přeprava autodopravcem na míru vašim potřebám.
+      storage-and-repairs: 
+        title: Uskladnění vozidel a opravy
+        text: Bezpečné skladování vozidel s volitelnou inteligentní opravou, detailingem a úplným přelakováním pro leasing a firemní flotily.

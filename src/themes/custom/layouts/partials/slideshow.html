@@ -1,29 +1,25 @@
-{{ $slide01 := resources.Get "img/bq/slide.001.webp" }}
-{{ $slide02 := resources.Get "img/bq/slide.002.webp" }}
 <div id="slideshow">
     <div class="slides" uk-slideshow="autoplay: true autoplay-interval: 6500">
         <div class="slidewrapper" tabindex="-1">
             <div class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 525">
-                <div>
-                    <div
-                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="{{$slide01.Permalink}}" alt="LKWs" uk-cover>
+                {{ range $key, $value := .page.Params.slider}}
+                    {{ $translationTitleKey := printf "home.slider.slide.%s.title" $value }}
+                    {{ $translationTextKey := printf "home.slider.slide.%s.text"  $value }}
+                    {{ $imageSrc := printf "img/slider/slide.%s.webp"  $value }}
+                    {{ $img := resources.Get $imageSrc }}
+
+                    <div>
+                        <div
+                            class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                            <img src="{{$img.Permalink}}" alt="LKWs" uk-cover>
+                        </div>
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                            <h3 class="uk-margin-remove">{{ T $translationTitleKey }}</h3>
+                            <p class="uk-margin-remove">{{ T $translationTextKey }}</p>
+                        </div>
                     </div>
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                        <h3 class="uk-margin-remove">Bottom</h3>
-                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="{{$slide02.Permalink}}" alt="LKWs" uk-cover>
-                    </div>
-                    <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
-                        <h3 class="uk-margin-remove">Left</h3>
-                        <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
+
+                {{ end }}
             </div>
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" uk-slidenav-previous
                 uk-slideshow-item="previous"></a>

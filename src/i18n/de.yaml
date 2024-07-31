@@ -1,2 +1,18 @@
-privacy: privacy
-security: security
+home:
+  slider:
+    slide:
+      passenger-vehicle-transport: 
+        title: Offene PKW - Transporte
+        text: Über 20 Jahre maßgeschneiderter Autotransporte in ganz Europa mit GPS-gestützter Flexibilität für OEMs und darüber hinaus.
+      commercial-vehicle-transport: 
+        title: Nutzfahrzeug - Transporte
+        text: Lösen Sie unmögliche Transportherausforderungen mit vielseitigen Lösungen, einschließlich einzigartiger 3-LKW-Sattelzugmaschinen.
+      transport-of-campers-and-vans: 
+        title: Transport von Wohnmobilen und Transportern
+        text: Maßgeschneiderte Transportlösungen für Wohnmobile und Vans, unabhängig von Größe und Gewicht, mit unserem Ansatz „Nichts ist unmöglich“.
+      enclosed-transports: 
+        title: Geschlossene Transporte
+        text: Sicherer, diskreter und geschlossener Autotransport, auf Ihre Bedürfnisse zugeschnitten.
+      storage-and-repairs: 
+        title: Lagerung und Reparaturen
+        text: Sichere Fahrzeugeinlagerung optional mit Smart Repair, Detailing und Komplettlackierung für Leasing- und Firmenflotten.

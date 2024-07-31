@@ -1,2 +1,18 @@
-privacy: privacy
-security: security
+home:
+  slider:
+    slide:
+      passenger-vehicle-transport: 
+        title: Passenger vehicle transport
+        text: Over 20 years of tailored car carrier transport across Europe, providing GPS-tracked flexibility for OEMs and beyond.
+      commercial-vehicle-transport: 
+        title: Commercial vehicle transport
+        text: Solving impossible transport challenges with versatile solutions, including unique 3-truck tractor carriers.
+      transport-of-campers-and-vans: 
+        title: Transport of campers and vans
+        text: Tailored camper and van transport solutions, no matter the size or weight, with our "nothing is impossible" approach.
+      enclosed-transports: 
+        title: Enclosed transports
+        text: Secure, discreet enclosed car carrier transport tailored to your needs.
+      storage-and-repairs: 
+        title: Storage and repairs
+        text: Secure vehicle storage with optional smart repair, detailing, and full repainting for leasing and company fleets.
