@@ -1,9 +1,13 @@
 {{ define "main" }}
 {{ partial "slideshow.html" (dict "site" $.Site "page" $.Page ) }}
-{{ .Content }}
-{{ range site.RegularPages }}
+<div class="uk-container uk-margin-medium-top">
+  {{ .Content }}
 
-  <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ .Summary }}
-{{ end }}
+  <!-- {{ range site.RegularPages }}
+  
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }} -->
+</div>
+
 {{ end }}

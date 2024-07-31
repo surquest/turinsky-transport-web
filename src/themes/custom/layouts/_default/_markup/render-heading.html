@@ -1,0 +1,3 @@
+<h{{ .Level }} id="{{ .Anchor }}" class="uk-heading-{{ cond (eq .Level 1) "medium" "small" }}">
+  {{ .Text | safeHTML }}
+</h{{ .Level }}>

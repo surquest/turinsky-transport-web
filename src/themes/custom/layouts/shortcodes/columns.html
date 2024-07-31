@@ -1,0 +1,28 @@
+{{- $size := default "regular" (.Get "size" | lower) }}
+
+{{- if not (in (slice "regular" "large" "small") $size) }}
+  {{- $size = "regular" }}
+{{- end }}
+
+
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+  
+  {{- $odd := false}}
+  {{- range $key, $value := split .Inner "<--->" }}
+    {{ if $odd }}
+      <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right  ; repeat: true">
+            {{ . | $.Page.RenderString -}}
+        </div>
+      </div>
+    {{ else }}
+      <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left  ; repeat: true">
+            {{ . | $.Page.RenderString -}}
+        </div>
+      </div>
+    {{ end }}
+    {{$odd = not $odd}}
+  {{- end }}
+</div>
+

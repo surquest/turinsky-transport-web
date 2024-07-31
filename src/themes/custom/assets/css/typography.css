@@ -1,0 +1,19 @@
+h1.uk-heading-medium {
+	color: var(--red);
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-family: "Open Sans";
+	font-size: 300%;
+}
+
+h2.uk-heading-small {
+	color: var(--grey);
+	/* text-transform: uppercase; */
+	font-weight: 500;
+	font-family: "Open Sans";
+	font-size: 200%;
+}
+
+p {
+    margin-bottom: 6em;
+}
