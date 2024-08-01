@@ -3,3 +3,8 @@ footer p {
     margin-bottom: 0px;
     margin-left: 2em;
 }
+
+footer h3 {
+    text-align: left;
+    margin-left: 3em;
+}
