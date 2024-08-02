@@ -13,7 +13,7 @@
 
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-navbar-nav uk-visible@s" uk-dropnav="mode: click">
-                    {{ partial "menu.html" (dict "site" $.Site) }}
+                    {{ partial "menu.html" (dict "site" $.Site "page" $.Page) }}
                     <li class="uk-nav-divider"></li>
                     {{ partial "allLanguages.html" (dict "site" $.Site "page" $.Page ) }}
                     

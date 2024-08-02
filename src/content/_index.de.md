@@ -15,7 +15,7 @@ slider = [
 
 Wir beschäftigen uns Fahrzeugtransporten seit mehr als 20 Jahren. Mit Niederlassungen in Deutschland, Tschechien und der Slowakei können wir ihnen größtmögliche Flexibilität bieten.
 
-{{< columns >}} <!-- begin columns block -->
+{{< cards >}} <!-- begin columns block -->
 
 ## Internationale Fahrzeugtransporte
 
@@ -27,4 +27,4 @@ Wir sind spezialisiert auf europaweite Transporte für jeweilige Fahrzeugart. Sc
 
 Dank unserer langjährigen Erfahrung und neuester Technik können wir ihnen einen hohen Qualitätsstandard bieten. Dies bestätigt auch unsere ISO 9001 Zertifizierung.
 
-{{< /columns >}} <!-- end columns block -->
+{{< /cards >}} <!-- end columns block -->

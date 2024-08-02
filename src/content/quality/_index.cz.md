@@ -4,6 +4,16 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
-# Kvalita
+# Záruky kvality
 
-Tato stránka je prvá
+Naším cílem je neustálé zlepšování kvality poskytovaných služeb a celkového servisu pro naše zákazníky. Jen díky profesionálnímu přístupu, používání moderních technologií a sledování nových trendů se řadíme mezi přední poskytovatele automobilové přepravy.
+
+Také díky tomu jsme získali certifikaci **ISO 9001** - systém kvality řízení.
+
+{{< slider >}}
+![certificate ISO 9001](img.cert.iso9001.jpg)
+![certificate ISO 14001](img.cert.iso14001.jpg)
+![certificate text](img.cert.text.jpg)
+{{</slider >}}
+
+

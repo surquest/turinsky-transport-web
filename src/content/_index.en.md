@@ -15,7 +15,7 @@ slider = [
 
 Turinsky Transport has more than 20 years experience in vehicle transports. With branches in Germany, Czech Republic and Slovakia we can offer you the highest flexibility.
 
-{{< columns >}} <!-- begin columns block -->
+{{< cards >}} <!-- begin columns block -->
 ## International transport
 
 We‘re specialized on vehicle transports and we surely will meet your demand. Send us an enquiry.
@@ -26,4 +26,4 @@ We‘re specialized on vehicle transports and we surely will meet your demand. S
 
 Thanks to our long experience on the logistics market we are offering you the quality standard you expect. This is proved by our ISO 9001 certification.
 
-{{< /columns >}} <!-- end columns block -->
+{{< /cards >}} <!-- end columns block -->

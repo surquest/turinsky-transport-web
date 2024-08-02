@@ -1,7 +1,11 @@
 main {
-    min-height: calc(100% - 25px);
+    min-height: calc(100% - 420px);
 }
 
 main #hero {
     min-height: calc(100% - 100px);
+}
+
+.uk-card h2.uk-heading-small {
+    text-align: center;
 }
