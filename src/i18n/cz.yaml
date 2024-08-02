@@ -17,28 +17,33 @@ home:
         title: Uskladnění vozidel a opravy
         text: Bezpečné skladování vozidel s volitelnou inteligentní opravou, detailingem a úplným přelakováním pro leasing a firemní flotily.
 
-footer:
-  offices:
-    cz:
-      title: Česká republika
-      contact: 
-        phone: +420 326 370 030-3
-        email: info@turinsky-transport.com
-      address:
-        headquarter: U Děkanky 1650/16, 142 00 Praha 4
-        workshop: Plazy 102, 293 01 Mladá Boleslav
-    de:
-      title: Německo
-      contact: 
-        phone: +49 93 70 99 17 200
-        email: turinsky@turinsky-transport.com
-      address:
-        headquarter: Friedrich-Ebert-Straße 21, 95448 Bayreuth
-    sk:
-      title: Slovensko
-      contact: 
-        phone: +421 265 457 309
-        email: krizova@turinsky-transport.com
-      address:
-        headquarter: Vazovova 9/B, SK-81107 Bratislava
-        workshop: Malacká 39, SK-90031 Stupava
+terms:
+
+  departments:
+    ceo: Zodpovědný vedoucí
+    dispo: Dispozice
+    hr: Personální oddělení
+    insurance: Oddělení pojistných událostí
+
+  countries:
+    cz: Česká republika
+    de: Německo
+    sk: Slovensko
+
+  keywords:
+    team: Tým
+    address: Adresa
+    headquarter: Sídlo
+    workshop: Provozovna
+    bankAccount: "Bankovní konto"
+    contacts: "Kontakty"
+    legalId: "IC"
+    vatId: "DIČ"
+    phone: "Telefon"
+    fax: "Fax"
+    email: "Email"
+    legalEntity: Turinsky Transport s.r.o., vedena u Městského soudu v Praze, oddíl C 20950, Zapsáno v OR u MS v Praze oddíl C, vložka 20950
+
+
+
+

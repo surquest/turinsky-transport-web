@@ -1,78 +1,75 @@
 <div class="uk-section uk-section-secondary uk-light">
     <div class="uk-container">
         <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            {{- $offices := slice "cz" "de" "sk" }}
-            {{- range $key, $value := $offices}}
-            {{ $tKeyTitle := printf "footer.offices.%s.title" $value }}
-            {{ $tKeyPhone := printf "footer.offices.%s.contact.phone" $value }}
-            {{ $tKeyEmail := printf "footer.offices.%s.contact.email" $value }}
-            {{ $tKeyHQAddress := printf "footer.offices.%s.address.headquarter" $value }}
-            {{ $tKeyWAddress := printf "footer.offices.%s.address.workshop" $value }}
-            <div>
-                <h3>
-                    {{ T $tKeyTitle }}
-                </h3>
-                <p>
-                    <a 
-                        href="tel:{{ T $tKeyPhone }}" 
-                        class="uk-icon-button uk-margin-small-right"
-                        uk-icon="receiver"
-                    ></a>
-                    <a 
-                        href="tel:{{ T $tKeyPhone }}" 
-                    >
-                    {{ T $tKeyPhone }}
-                    </a>
-                </p>
-                <p>
-                    <a 
-                        href="mailto:{{ T $tKeyEmail }}" 
-                        class="uk-icon-button uk-margin-small-right"
-                        uk-icon="mail"
-                    ></a>
-                    <a 
-                        href="mailto:{{ T $tKeyEmail }}" 
-                    >
-                    {{ T $tKeyEmail }}
-                    </a>
-                </p>
-                <p>
-                    <a 
-                        href="http://maps.google.com/?q={{ T $tKeyHQAddress }}" 
-                        target="_blank"
-                        class="uk-icon-button uk-margin-small-right"
-                        uk-icon="home"
-                    ></a>
-                    <a 
-                        href="http://maps.google.com/?q={{ T $tKeyHQAddress }}" 
-                        target="_blank"
-                    >
-                        {{ T $tKeyHQAddress }}    
-                    </a>
-                </p>
-
-                {{ if T $tKeyWAddress}}
-                <p>
-                    <a 
-                        href="http://maps.google.com/?q={{ T $tKeyWAddress }}" 
-                        target="_blank"
-                        class="uk-icon-button uk-margin-small-right"
-                        uk-icon="home"
-                    ></a>
-                    <a 
-                        href="http://maps.google.com/?q={{ T $tKeyWAddress }}" 
-                        target="_blank"
-                    >
-                        {{ T $tKeyWAddress }}    
-                    </a>
-                </p>
-                {{ else }}
-                <p>
-                    &nbsp;
-                </p>
+            {{ range $key, $offices := .site.Data.office }}
+                {{ range $offices }}
+                {{ $countryKey := printf "terms.countries.%s" .country }}
+                <div>
+                    <h3>
+                        {{ T $countryKey }}
+                    </h3>
+                    <p>
+                        <a 
+                            href="tel:{{ .phone }}" 
+                            class="uk-icon-button uk-margin-small-right"
+                            uk-icon="receiver"
+                        ></a>
+                        <a 
+                            href="tel:{{ .phone }}" 
+                        >
+                        {{ .phone }}
+                        </a>
+                    </p>
+                    <p>
+                        <a 
+                            href="mailto:{{ .email }}" 
+                            class="uk-icon-button uk-margin-small-right"
+                            uk-icon="mail"
+                        ></a>
+                        <a 
+                            href="mailto:{{ .email }}" 
+                        >
+                        {{ .email }}
+                        </a>
+                    </p>
+                    <p>
+                        <a 
+                            href="http://maps.google.com/?q={{ .headquarter }}" 
+                            target="_blank"
+                            class="uk-icon-button uk-margin-small-right"
+                            uk-icon="home"
+                        ></a>
+                        <a 
+                            href="http://maps.google.com/?q={{ .headquarter }}" 
+                            target="_blank"
+                        >
+                            {{ .headquarter }}    
+                        </a>
+                    </p>
+                    {{ if .workshop }}
+                        <p>
+                            <a 
+                                href="http://maps.google.com/?q={{ .workshop }}" 
+                                target="_blank"
+                                class="uk-icon-button uk-margin-small-right"
+                                uk-icon="home"
+                            ></a>
+                            <a 
+                                href="http://maps.google.com/?q={{ .workshop }}" 
+                                target="_blank"
+                            >
+                                {{.workshop }}    
+                            </a>
+                        </p>
+                    {{ else }}
+                        <p>
+                            &nbsp;
+                        </p>
+                    {{ end }}
+                </div>
                 {{ end }}
-            </div>
             {{ end }}
+
         </div>
     </div>
 </div>

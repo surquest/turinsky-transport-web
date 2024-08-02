@@ -1,5 +1,0 @@
-{{- $u := urls.Parse .Destination -}}
-{{- $src := $u.String -}}
-{{ $img := resources.Get $src }}
-<!-- <span>|{{ $u }}|</span> -->
-<img src="{{$src}}" />

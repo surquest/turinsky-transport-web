@@ -1,0 +1,65 @@
+- name: Robert Turinsky
+  role: terms.departments.ceo
+  email: r.turinsky@turinsky-transport.com
+  phone: +420 326 370 030
+  fax: +420 326 370 039
+  country: cz
+- name: Josef Verner
+  role: terms.departments.dispo
+  email: verner@turinsky-transport.com
+  phone: +420 326 370 031
+  fax: +420 326 370 038
+  country: cz
+- name: Přemysl Bubák
+  role: terms.departments.dispo
+  email: bubak@turinsky-transport.com
+  phone: +420 326 370 041
+  fax: +420 326 370 038
+  country: cz
+- name: Lucie Bílková
+  role: terms.departments.dispo
+  email: lucie@turinsky-transport.com
+  phone: +420 326 370 042
+  fax: +420 326 370 038
+  country: cz
+- name: Stanislav Švec
+  role: terms.departments.dispo
+  email: svec@turinsky-transport.com
+  phone: +420 326 370 034
+  fax: +420 326 370 038
+  country: cz
+- name: Radek Procházka
+  role: terms.departments.dispo
+  email: prochazka@turinsky-transport.com
+  phone: +420 326 370 032
+  fax: +420 326 370 038
+  country: cz
+- name: Taťána Hlaváčová
+  role: terms.departments.insurance
+  email: tana@turinsky-transport.com
+  phone: +420 326 370 046
+  fax: +420 326 370 044
+  country: cz
+- name: Ing. Miroslav Růžička
+  role: terms.departments.hr
+  email: ruzicka@turinsky-transport.com
+  phone: +420 326 370 070
+  fax: +420 326 370 038
+  country: cz
+- name: Rosi Turinsky
+  role: terms.departments.ceo
+  email: turinsky@turinsky-transport.com
+  phone: +49 9270 9917200
+  country: de
+- name: Marcela Križová
+  role: terms.departments.ceo
+  email: krizova@turinsky-transport.com
+  phone: +421 265 457 309
+  fax: +421 265 457 311
+  country: sk
+- name: Branislav Šupol
+  role: terms.departments.dispo
+  email: supol@turinsky-transport.com
+  phone: +421 265 457 310
+  fax: +421 265 457 311
+  country: sk

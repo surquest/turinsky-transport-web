@@ -17,28 +17,26 @@ home:
         title: Storage and repairs
         text: Secure vehicle storage with optional smart repair, detailing, and full repainting for leasing and company fleets.
 
-footer:
-  offices:
-    cz:
-      title: Czech Republic
-      contact: 
-        phone: +420 326 370 030-3
-        email: info@turinsky-transport.com
-      address:
-        headquarter: U Děkanky 1650/16, 142 00 Praha 4
-        workshop: Plazy 102, 293 01 Mladá Boleslav
-    de:
-      title: Germany
-      contact: 
-        phone: +49 93 70 99 17 200
-        email: turinsky@turinsky-transport.com
-      address:
-        headquarter: Friedrich-Ebert-Straße 21, 95448 Bayreuth
-    sk:
-      title: Slovakia
-      contact: 
-        phone: +421 265 457 309
-        email: krizova@turinsky-transport.com
-      address:
-        headquarter: Vazovova 9/B, SK-81107 Bratislava
-        workshop: Malacká 39, SK-90031 Stupava
+terms:
+  departments:
+    ceo: Executive chief
+    dispo: Dispo
+    hr: Staff department
+    insurance: Insured accident department
+  countries:
+    cz: Czech Republic
+    de: Germany
+    sk: Slovakia
+  keywords:
+    team: Team
+    address: Address
+    headquarter: Headquarters
+    workshop: Workshop
+    legalId: ID
+    vatId: VAT ID
+    bankAccount: Bank account
+    contacts: Contacts
+    phone: "Phone"
+    fax: "Fax"
+    email: "Email"
+    legalEntity: Turinsky Transport s.r.o., held at the Municipal Court in Prague, section C 20950, Registered in the OR at the Ministry of Justice in Prague, section C, insert 20950
