@@ -11,7 +11,10 @@ In order to guarantee you the service you expect we are applying continuous impr
 
 {{< slider >}}
 ![certificate ISO 9001](img.cert.iso9001.jpg)
+![certificate text](img.cert.text.jpg)
 ![certificate ISO 14001](img.cert.iso14001.jpg)
+![certificate text](img.cert.text.jpg)
+![certificate ISO 9001](img.cert.iso9001.jpg)
 ![certificate text](img.cert.text.jpg)
 {{</slider >}}
 
