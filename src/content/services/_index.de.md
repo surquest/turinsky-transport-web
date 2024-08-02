@@ -5,5 +5,3 @@ draft = false
 +++
 
 # Leistungen
-
-Das ist die erste Seite

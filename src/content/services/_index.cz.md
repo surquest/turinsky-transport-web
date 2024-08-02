@@ -6,4 +6,3 @@ draft = false
 
 # Služby
 
-Tato stránka je prvá
