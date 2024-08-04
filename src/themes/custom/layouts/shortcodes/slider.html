@@ -7,8 +7,16 @@
                 
                 {{- range $key, $value := split .Inner "\n" }}
                 {{ if strings.Contains . "!" }}
+                {{ $imgSrc := trim (index (split $value "(" ) 1) ")"   }}
                 <div>
-                    {{ . | $.Page.RenderString -}}
+                    <div uk-lightbox>
+                        <a href="{{ $imgSrc }}">
+                            <!-- {{ . }} -->
+                            {{ . | $.Page.RenderString | }}
+                        </a>
+                    </div>
+
+                    
                 </div>
                 {{- end}}
                 {{- end}}

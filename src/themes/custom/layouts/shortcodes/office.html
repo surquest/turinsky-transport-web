@@ -1,52 +1,67 @@
 {{ $office := .Get "country" }}
 
-<div class="uk-column-1-2">
+<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s " uk-grid>
 
   {{ range $key, $offices := .Site.Data.office }}
   {{ range $offices }}
+  {{ $legalEntity := printf "terms.keywords.legalEntity.%s" $office }}
   {{ if eq .country $office }}
 
-  <h3 id="addess" class="uk-heading-small">
-    {{ T "terms.keywords.address" }}
-  </h3>
+  <div>
+    <div class="uk-card uk-card-body">
 
-  {{ T "terms.keywords.legalEntity" }}
+      <h3 id="addess" class="uk-heading-small">
+        {{ T "terms.keywords.address" }}
+      </h3>
 
-  <ul>
+      <ul>
 
-    <li>{{ T "terms.keywords.headquarter" }}: <span class="uk-text-bolder">{{ .headquarter }}</span></li>
-    {{ if .workshop }}
-    <li>{{ T "terms.keywords.workshop" }}: <span class="uk-text-bolder">{{ .workshop }}</span></li>
-    {{ end }}
-    {{ if .id }}
-    <li>{{ T "terms.keywords.legalId" }}: <span class="uk-text-bolder">{{ .id }}</span></li>
-    {{ end }}
-    {{ if .vat }}
-    <li>{{ T "terms.keywords.vatId" }}: <span class="uk-text-bolder">{{ .vat }}</span></li>
-    {{ end }}
-    {{ if .bankAccount }}
-    <li>{{ T "terms.keywords.bankAccount" }}: <span class="uk-text-bolder">{{ .bankAccount }}</span></li>
-    {{ end }}
-  </ul>
+        <li>{{ T "terms.keywords.headquarter" }}: <span class="uk-text-bolder">{{ .headquarter }}</span></li>
+        {{ if .workshop }}
+        <li>{{ T "terms.keywords.workshop" }}: <span class="uk-text-bolder">{{ .workshop }}</span></li>
+        {{ end }}
+        {{ if .id }}
+        <li>{{ T "terms.keywords.legalId" }}: <span class="uk-text-bolder">{{ .id }}</span></li>
+        {{ end }}
+        {{ if .vat }}
+        <li>{{ T "terms.keywords.vatId" }}: <span class="uk-text-bolder">{{ .vat }}</span></li>
+        {{ end }}
+        {{ if .bankAccount }}
+        <li>{{ T "terms.keywords.bankAccount" }}: <span class="uk-text-bolder">{{ .bankAccount }}</span></li>
+        {{ end }}
+      </ul>
 
-  <h3 id="contacts" class="uk-heading-small">
-    {{ T "terms.keywords.contacts" }}
-  </h3>
-  <ul>
-    {{ if .phone }}
-    <li>{{ T "terms.keywords.phone" }}: <a href="tel:{{ .phone }}">{{ .phone }}</a></li>
-    {{ end }}
-    {{ if .fax }}
-    <li>{{ T "terms.keywords.fax" }}: <a href="tel:{{ .fax }}">{{ .fax }}</a></li>
-    {{ end }}
-    {{ if .email }}
-    <li>{{ T "terms.keywords.email" }}: <a href="mailto:{{ .email }}">{{ .email }}</a></li>
-    {{ end }}
-  </ul>
+      {{ T $legalEntity }}
 
-  <a href="http://maps.google.com/?q={{ .workshop }}" target="_blank">
-    {{ $.Inner | $.Page.RenderString -}}
-  </a>
+      <h3 id="contacts" class="uk-heading-small">
+        {{ T "terms.keywords.contacts" }}
+      </h3>
+
+      <ul>
+        {{ if .phone }}
+        <li>{{ T "terms.keywords.phone" }}: <a href="tel:{{ .phone }}">{{ .phone }}</a></li>
+        {{ end }}
+        {{ if .fax }}
+        <li>{{ T "terms.keywords.fax" }}: <a href="tel:{{ .fax }}">{{ .fax }}</a></li>
+        {{ end }}
+        {{ if .email }}
+        <li>{{ T "terms.keywords.email" }}: <a href="mailto:{{ .email }}">{{ .email }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <div class="uk-card uk-card-body">
+      {{ $mapLocation := default .headquarter .workshop  }}
+      <a href="http://maps.google.com/?q={{ $mapLocation }}" target="_blank">
+        {{ $.Inner | $.Page.RenderString -}}
+      </a>
+    </div>
+
+  </div>
+
+
 
   {{ end }}
   {{ end }}

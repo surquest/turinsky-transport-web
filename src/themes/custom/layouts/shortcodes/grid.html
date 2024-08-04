@@ -1,7 +1,8 @@
 <div class="uk-child-width-1-2" uk-grid>
-    {{- range $key, $value := split .Inner "<--->" }}
+    {{- range $key, $value := split .Inner "<-divider->" }}
     <div>
-        {{ . | $.Page.RenderString -}}
+        {{ . }}
+        <!-- {{ . | $.Page.RenderString }} -->
     </div>
     {{- end }}
 </div>

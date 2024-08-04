@@ -9,8 +9,7 @@ draft = false
 
 {{< office country="de" >}}
 ![map](map.png)
-{{</ office >}}
-
+{{< /office >}}
 
 {{< team country="de" >}}
 {{</ team >}}

@@ -42,8 +42,10 @@ terms:
     phone: "Telefon"
     fax: "Fax"
     email: "Email"
-    legalEntity: Turinsky Transport s.r.o., vedena u Městského soudu v Praze, oddíl C 20950, Zapsáno v OR u MS v Praze oddíl C, vložka 20950
-
+    legalEntity: 
+      cz: "Turinsky Transport s.r.o., vedena u Městského soudu v Praze, oddíl C 20950, Zapsáno v OR u MS v Praze oddíl C, vložka 20950"
+      sk: "Turinsky transport Slovakia s.r.o., Obchodný register Mestského súdu Bratislava III, oddiel: Sro, vložka č. 34510/B"
+      de: "Spedition Turinsky GmbH, Amtsgericht Bayreuth, HRB 1955"
 
 
 
