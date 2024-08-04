@@ -1,20 +1,19 @@
 {{ $current := . }}
-{{ $active := "" }}
+{{ $currentLang := .Lang }}
+{{ $defaultLang := $.Lang }}
+
 <li>
+  
   <a href="{{ site.Home.Permalink }}">{{ upper site.Home.Title}}</a>
 </li>
 
-{{- range site.Sections }}
+{{- range sort site.Sections "Weight" }}
 
 <!-- Get current page index to allow flagging active page-->
 {{ $active := "" }}
-{{ $currentItemIDX := index (split .RelPermalink "/") 1 }}
-{{ $currentPageIDX := index (split page.RelPermalink "/") 1 }}
-
-{{ if eq $currentItemIDX $currentPageIDX }}
+{{ if in page.RelPermalink .RelPermalink}}
 {{ $active = "uk-active" }}
 {{- end }}
-
 <li class="{{ $active }}">
   <a href="{{.Permalink}}">
     {{ upper .Title }}

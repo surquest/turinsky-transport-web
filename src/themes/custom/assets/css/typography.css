@@ -20,12 +20,14 @@ h2.uk-heading-small {
 	font-size: 200%;
 }
 
-
-
 h3.uk-heading-small {
 	color: var(--grey);
 	/* text-transform: uppercase; */
 	font-weight: 500;
 	font-family: "Open Sans";
 	font-size: 150%;
+}
+
+li {
+	text-align: left;
 }
