@@ -8,7 +8,7 @@ weight = 2
 # Spedition Turinsky GmbH
 
 {{< office country="de" >}}
-![map](map.png)
+![map](map.webp)
 {{< /office >}}
 
 {{< team country="de" >}}

@@ -5,11 +5,4 @@ draft = false
 weight = 4
 +++
 
-# Turinsky transport Slovakia s.r.o.
-
-{{< office country="sk" >}}
-![map](map.png)
-{{< /office >}}
-
-{{< team country="sk" >}}
-{{</ team >}}
+# Kontakte Turinsky Transport

@@ -8,7 +8,7 @@ weight = 3
 # Turinsky transport Slovakia s.r.o.
 
 {{< office country="sk" >}}
-![map](map.png)
+![map](map.webp)
 {{</ office >}}
 
 

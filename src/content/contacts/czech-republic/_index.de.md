@@ -8,7 +8,7 @@ weight = 1
 # Turinsky Transport s.r.o.
 
 {{< office country="cz" >}}
-![map](map.png)
+![map](map.webp)
 {{< /office >}}
 
 {{< team country="cz" >}}

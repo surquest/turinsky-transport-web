@@ -12,9 +12,12 @@ Naším cílem je neustálé zlepšování kvality poskytovaných služeb a celk
 Také díky tomu jsme získali certifikaci **ISO 9001** - systém kvality řízení.
 
 {{< slider >}}
-![certificate ISO 9001](img.cert.iso9001.jpg)
-![certificate ISO 14001](img.cert.iso14001.jpg)
-![certificate text](img.cert.text.jpg)
+![certificate ISO 9001](img.cert.iso9001.webp)
+![certificate text](img.cert.text.webp)
+![certificate ISO 14001](img.cert.iso14001.webp)
+![certificate text](img.cert.text.webp)
+![certificate ISO 9001](img.cert.iso9001.webp)
+![certificate text](img.cert.text.webp)
 {{</slider >}}
 
 
