@@ -10,6 +10,7 @@ FROM golang:1.23-alpine
 RUN apk add --no-cache nodejs npm
 
 # Install Hugo
+# RUN go install github.com/gohugoio/hugo@v0.120.3 
 RUN go install github.com/gohugoio/hugo@latest
 
 # Set the working directory
