@@ -4,13 +4,13 @@
 # - Hugo
 
 # Start from the latest version of the official Golang image
-FROM golang:1.22.5-alpine3.20
+FROM golang:1.23-alpine
 
 # Install Node.js
 RUN apk add --no-cache nodejs npm
 
 # Install Hugo
-RUN apk add --no-cache hugo
+RUN go install github.com/gohugoio/hugo@latest
 
 # Set the working directory
 WORKDIR /src
